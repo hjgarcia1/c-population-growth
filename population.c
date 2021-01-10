@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+static int initial_popupulation = 9;
+
 int calculate_growth(int starting_size, int ending_size);
 int get_starting_size();
 int get_ending_size(int starting_size);
@@ -43,7 +45,7 @@ int get_starting_size()
     do
     {
         scanf("%d", &starting_size);
-    } while (starting_size < 9);
+    } while (starting_size < initial_popupulation);
 
     return starting_size;
 }
