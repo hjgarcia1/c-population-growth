@@ -19,7 +19,7 @@ int main(void)
     printf("Years: %i\n", years);
 }
 
-int calculate_growth(starting_size, ending_size)
+int calculate_growth(int starting_size, int ending_size)
 {
     int years = 0, population_gain;
 
